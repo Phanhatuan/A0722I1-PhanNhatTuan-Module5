@@ -1,0 +1,9 @@
+<div>
+  Thời gian còn lại: {{ countdown }} giây
+</div>
+<div *ngIf="countdown === 0">
+  Đã hoàn thành đếm ngược!
+</div>
+<button (click)="startCountdown()" >Bắt đầu</button>
+<button (click)="resetCountdown()" >Reset</button>
+<button (click)="stopCountdown()" *ngIf="countdown > 0">Dừng đếm ngược</button>
